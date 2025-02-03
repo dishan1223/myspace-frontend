@@ -10,7 +10,7 @@ function Navbar() {
   }, []);
 
   return (
-    <div className="w-full h-16 flex justify-center items-center nav-clr border-b border-white">
+    <div className="w-full min-h-16 h-16 flex justify-center items-center nav-clr border-b border-white">
       <div className="w-5xl flex justify-between items-center">
         <div className="text-2xl font-bold cursor-pointer">
           <a href="/">MySpace</a>
