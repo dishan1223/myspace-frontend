@@ -6,7 +6,7 @@ function PostContainer() {
   return (
    <div className="my-2">
         <div className="flex items-center justify-between border-b-[0.5px] border-neutral-400">
-            <div><h3 className="text-[#EFEFEF]">Latest Posts</h3></div>
+            <div><h3 className="text-gray-200 font-medium">Latest Posts</h3></div>
             <div><button className='cursor-pointer'><img src={searchIcon} alt="search" /></button></div>
         </div>
         <Posts />
