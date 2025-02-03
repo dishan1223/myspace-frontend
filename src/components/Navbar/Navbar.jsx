@@ -18,7 +18,7 @@ function Navbar() {
 
         {!isLoggedIn && ( // Only show buttons if user is NOT logged in
           <div className="flex gap-2">
-            <a href="/login">
+            <a href="/register">
               <button className="w-auto flex justify-center items-center gap-2 h-8 bg-neutral-100 text-[#000] px-4 rounded-md font-medium cursor-pointer hover:bg-neutral-200">
                 Register
                 <svg
@@ -35,38 +35,40 @@ function Navbar() {
                 </svg>
               </button>
             </a>
-            <button className="w-auto flex justify-center items-center gap-2 h-8 bg-[#8E9DFF] px-4 text-[#000] rounded-md font-medium cursor-pointer hover:bg-[#8694F4]">
-              Log In
-              <svg
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M13 4H20C20.55 4 21 4.45 21 5V19C21 19.55 20.55 20 20 20H13"
-                  stroke="#1E1E1E"
-                  strokeWidth="2"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                />
-                <path
-                  d="M3 12H14.5"
-                  stroke="#1E1E1E"
-                  strokeWidth="2"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                />
-                <path
-                  d="M11 8.5L14.5 12L11 15.5"
-                  stroke="#1E1E1E"
-                  strokeWidth="2"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                />
-              </svg>
-            </button>
+            <a href="/login">
+              <button className="w-auto flex justify-center items-center gap-2 h-8 bg-[#8E9DFF] px-4 text-[#000] rounded-md font-medium cursor-pointer hover:bg-[#8694F4]">
+                Log In
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M13 4H20C20.55 4 21 4.45 21 5V19C21 19.55 20.55 20 20 20H13"
+                    stroke="#1E1E1E"
+                    strokeWidth="2"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                  />
+                  <path
+                    d="M3 12H14.5"
+                    stroke="#1E1E1E"
+                    strokeWidth="2"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                  />
+                  <path
+                    d="M11 8.5L14.5 12L11 15.5"
+                    stroke="#1E1E1E"
+                    strokeWidth="2"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                  />
+                </svg>
+              </button>
+            </a>
           </div>
         )}
       </div>

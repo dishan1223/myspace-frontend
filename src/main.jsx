@@ -7,7 +7,9 @@ import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 // pages
 import NotFound from './Pages/NotFound/NotFoundPage.jsx'
 import App from './App.jsx'
-import LoginPage from './Pages/Login/LoginPage.jsx'; 
+import LoginPage from './Pages/Login/LoginPage.jsx';
+import RegisterPage from './Pages/RegisterPage/RegisterPage.jsx';
+import ReadingPage from './Pages/ReadingPage/ReadingPage.jsx'; 
 
 
 
@@ -20,7 +22,17 @@ const router = createBrowserRouter([
   {
     path: '/login',
     element: <LoginPage/>,
-    errorElement: <NotFound/>
+    errorElement: <NotFound/>,
+  },
+  {
+    path: '/register',
+    element: <RegisterPage/>,
+    errorElement: <NotFound/>,
+  },
+  {
+    path: '/post/:id',
+    element: <ReadingPage/>,
+    errorElement: <NotFound/>,
   },
   {
     path: "*",
