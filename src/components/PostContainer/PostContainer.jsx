@@ -7,12 +7,12 @@ import linkIcon from '../../assets/link.svg';
 
 function PostContainer() {
   return (
-   <div className="my-4">
-        <div className="flex items-center justify-between border-b-2">
+   <div className="my-2">
+        <div className="flex items-center justify-between border-b-[0.5px] border-neutral-400">
             <div><h3 className="text-[#EFEFEF]">Latest Posts</h3></div>
             <div><button className='cursor-pointer'><img src={searchIcon} alt="search" /></button></div>
         </div>
-
+        
         <div className='my-4'>
             <ul>
                 <li>

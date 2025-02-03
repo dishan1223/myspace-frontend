@@ -7,6 +7,7 @@ import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 // pages
 import NotFound from './Pages/NotFound/NotFoundPage.jsx'
 import App from './App.jsx'
+import LoginPage from './Pages/Login/LoginPage.jsx'; 
 
 
 
@@ -15,6 +16,11 @@ const router = createBrowserRouter([
     path: "/",
     element: <App />,
     errorElement: <NotFound />,
+  },
+  {
+    path: '/login',
+    element: <LoginPage/>,
+    errorElement: <NotFound/>
   },
   {
     path: "*",
